@@ -17,10 +17,6 @@ const ACTIONs = {
 const path = require('path');
 const server = http.Server(app);
 const io = new Server(server);
-app.use(express.static('build'));
-app.use((req, res, nxt)=>{
-res.sendFile(path.join(__dirname,'build','index.html'))
-})
 const userSocketMap = {};
 function getAllConnectedClients(roomId){
     return Array.from(io.sockets.adapter.rooms.get(roomId) || []).map((socketId)=>{
