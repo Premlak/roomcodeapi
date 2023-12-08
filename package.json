@@ -8,8 +8,7 @@
     "socket.io": "^4.7.2"
   },
   "scripts": {
-    "start": "npm install && node server.js",
-    "server:prod": "node server.js"
+    "start": "node server.js",
   },
   "eslintConfig": {
     "extends": [
