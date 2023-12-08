@@ -5,11 +5,11 @@
   "main": "express.js",
   "dependencies": {
     "express": "^4.18.2",
-    "socket.io": "^4.7.2",
+    "socket.io": "^4.7.2"
   },
   "scripts": {
-    "start": "npm install",
-    "server:prod":"node server.js"
+    "start": "npm install && node server.js",
+    "server:prod": "node server.js"
   },
   "eslintConfig": {
     "extends": [
